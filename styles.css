@@ -1,44 +1,47 @@
 body, html {
+    font-family: 'Arial', sans-serif;
     height: 100%;
     margin: 0;
     padding: 0;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .image-container {
     background-image: url(/Users/ct/repos/odin_sign-up_project/images/IMG_0536.jpg);
     background-size: cover;
     background-position: center;
-    flex-grow: 1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
 }
 
-.sign-up {
+.wrapper {
+   background-color: rgba(255, 255, 255, 0.9);
+   padding: 20px;
+   border-radius: 8px;
+   width: 100%;
+   max-width: 400px;
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.wrapper form {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    border-radius: 5px;
-    background-color: rgba(255, 255, 255, 0.8);
-
-}
-
-
-.sign-up form {
-    display: flex;
     gap: 10px;
 }
 
-.sign-up input[type="text"],
-.sign-up input[type="email"],
-.sign-up input[type="tel"],
-.sign-up input[type="password"],
-.sign-up textarea {
-    width: 100%;
-    padding: 8px;
-    box-sizing: border-box;
+.wrapper input[type="text"],
+.wrapper input[type="email"],
+.wrapper input[type="tel"],
+.wrapper input[type="password"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 95%;
 }
