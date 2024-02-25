@@ -36,12 +36,34 @@ body, html {
     gap: 10px;
 }
 
-.wrapper input[type="text"],
-.wrapper input[type="email"],
-.wrapper input[type="tel"],
-.wrapper input[type="password"] {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    width: 95%;
+form input {
+    width: 90%;
+    outline: none;
+    border: 1px solid #fff;
+    padding: 12px 20px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    background: #e4e4e4;
 }
+
+button {
+    font-size: 1rem;
+    margin-top: 1.8rem;
+    padding: 10px 0;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    width: 100%;
+    color: #fff;
+    cursor: pointer;
+    background: rgb(17, 107, 143);
+}
+
+button:hover {
+    background: rgba(17, 107, 143, 0.877);
+}
+
+input:focus {
+    border: 1px solid rgb(192, 192, 192);
+}
+
